@@ -8,7 +8,7 @@ import {
 } from "react-icons/di";
 
 import "../styles/components/technologiescontainer.sass";
-import Avatar from "../img/montagem.png";
+import Avatar from "../img/6.png";
 
 const technologies = [
   { id: "html", name: "Detecção de Defeitos em Componentes", icon: <img src={Avatar} className="imgP" alt="Conecta Lab" />, text:"Este projeto envolve a definição e impressão de vários componentes padrão e outros que podem apresentar defeitos de fabricação. Uma ferramenta para detecção de peças defeituosas é implementada e testada, com adaptação do sistema na esteira rolante." },

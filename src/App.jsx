@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
-      <BrowserRouter basename='/'>
+      <BrowserRouter basename='/portifolio'>
       <Routes>
       <Route path='/home' element={<Home/>}/>
       <Route path='/form' element={<FormContainer/>}/>
