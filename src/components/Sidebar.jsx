@@ -9,11 +9,11 @@ const Sidebar = () => {
   return (
     <aside id="sidebar">
       <img src={Avatar} alt="Conecta Lab" />
-      <p className="title">Desenvolvedor</p>
+      <p className="title"></p>
       <SocialNetworkContainer />
       <InformationContainer />
       <a href="#" className="btn">
-        Download currículo
+        Whatsapp
       </a>
     </aside>
   );

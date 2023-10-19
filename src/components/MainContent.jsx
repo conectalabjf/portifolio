@@ -9,7 +9,6 @@ const MainContent = () => {
     <main id="main-content">
       <AboutContainer />
       <TechnologiesContainer />
-      <ProjectsContainer />
     </main>
   );
 };
