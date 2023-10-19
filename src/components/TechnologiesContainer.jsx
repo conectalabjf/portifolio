@@ -11,7 +11,7 @@ import "../styles/components/technologiescontainer.sass";
 import Avatar from "../img/montagem.png";
 
 const technologies = [
-  { id: "html", name: "Detecção de Defeitos em Componentes", icon: <img src={Avatar} alt="Conecta Lab" />, text:"Este projeto envolve a definição e impressão de vários componentes padrão e outros que podem apresentar defeitos de fabricação. Uma ferramenta para detecção de peças defeituosas é implementada e testada, com adaptação do sistema na esteira rolante." },
+  { id: "html", name: "Detecção de Defeitos em Componentes", icon: <img src={Avatar} className="imgP" alt="Conecta Lab" />, text:"Este projeto envolve a definição e impressão de vários componentes padrão e outros que podem apresentar defeitos de fabricação. Uma ferramenta para detecção de peças defeituosas é implementada e testada, com adaptação do sistema na esteira rolante." },
   { id: "css", name: "Monitoramento de Sensores via Web", icon: <DiCss3 />, text:"Este projeto consiste na ligação e teste dos sensores, criação de uma página web para visualização dos dados, transmissão de dados e implementação de sistema supervisório. O sistema é montado em um tanque para simulação e teste." },
   { id: "css", name: "Mini Planta de Energia Solar", icon: <DiCss3 />, text:"Este projeto envolve a montagem e teste de uma mini planta de geração de energia solar, além da montagem de uma experiência de correção de fator de potência." },
   { id: "css", name: "Desenvolvimento de Jogos Sensoriais", icon: <DiCss3 />, text:"Este projeto visa definir e avaliar os jogos que serão apresentados, montar as estruturas de sensoriamento e testar os sistemas montados." },
