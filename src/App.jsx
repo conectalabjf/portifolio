@@ -10,7 +10,7 @@ function App() {
     <>
       <BrowserRouter basename='/portifolio'>
       <Routes>
-      <Route path='/home' element={<Home/>}/>
+      <Route path='/' element={<Home/>}/>
       <Route path='/form' element={<FormContainer/>}/>
         {/* <Route path='/form' element={<Form/>}/>
         <Route path='/home' element={<Home/>}/>
