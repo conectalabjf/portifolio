@@ -13,6 +13,17 @@
     text-align: left
     width: 80%
     border-radius: variables.$card-border-radius
+
+    h1
+        width: 100%
+        color: variables.$text-color
+        font-size: 3rem
+        margin-bottom: 1rem
+        justify-content: center
+        text-align: center
+        background: variables.$gradient
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
     
 
     .info-card
@@ -23,37 +34,29 @@
         gap: 1rem
         padding-bottom: .8rem
         margin-bottom: .8rem
-        border-bottom: 1px solid #444
+        border-bottom: 1px solid #72dbfb
         width: 100%
 
-        // .title
-        // color: variables.$text-color-secondary
-        // border-radius: variables.$card-border-radius
-        // padding: .8rem 1.2rem
+        .box
+            width:20%
+            margin-top: 5%
+            width: 12rem
+            height: 2rem
+
+
+        .title
+            color: variables.$text-color-secondary
+            border-radius: variables.$card-border-radius
+            padding: .8rem 1.2rem
+            width: 60%
+            height: 20%
         
 
         label 
             display: flex
             flex-direction: column
             width: 40%
-
-        h3
-            color: variables.$text-color-secondary
-            font-size: .8rem
-            margin-bottom: .5rem
-
-        p
-            color: variables.$text-color
-            font-weight: bold
-
-        #phone-icon
-            color: #e93b81
-
-        #pin-icon
-            color: #6ab5b9
-
-        #email-icon
-            color: #c17ceb
+            
         
 #bnt
     @include mixins.btn
@@ -62,11 +65,7 @@
         padding: .6em
         background-color: variables.$bg-color-secondary
         border-radius: variables.$card-border-radius
-        color: #333
+        color: #4aa6f6
         font-size: 1.3rem
-
-        // :hover
-        // background: variables.$gradient
-        // > svg
-        //     color: variables.$text-color
+        
         

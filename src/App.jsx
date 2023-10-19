@@ -7,8 +7,8 @@ function App() {
     <div>
       <BrowserRouter>
         <Routes>
-          <Route path="/portifolio" element={<Home />} />
-          <Route path="/portifolio/form" element={<FormContainer />} />
+          <Route path="/portifolio" element={<FormContainer />} />
+          <Route path="/portifolio/home" element={<Home />} />
           {/* <Route path='/form' element={<Form/>}/>
         <Route path='/home' element={<Home/>}/>
         <Route path='/about' element={<AboutPage/>}/>

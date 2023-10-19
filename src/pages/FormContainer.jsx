@@ -29,18 +29,21 @@ const FormContainer = () => {
     if (response.ok) {
       setError("Error");
       alert(error);
-      navigate("/");
+      navigate("/home");
     } else {
       console.log("erro");
     }
   }
   return (
     <div id="form">
+      <h1>Registre</h1>
       <form onSubmit={handleSubmit} className="info-card">
         <label className="title">
           Nome
           <input
+          className="box"
             type="text"
+            required='true'
             onChange={(e) => setData({ ...data, name: e.target.value })}
             value={data.name}
           />
@@ -48,7 +51,9 @@ const FormContainer = () => {
         <label className="title">
           Email
           <input
-            type="text"
+          className="box"
+            type="email"
+            required='true'
             onChange={(e) => setData({ ...data, email: e.target.value })}
             value={data.email}
           />
@@ -56,7 +61,9 @@ const FormContainer = () => {
         <label className="title">
           Whatsapp
           <input
+          className="box"
             type="text"
+            required='true'
             onChange={(e) => setData({ ...data, telefone: e.target.value })}
             value={data.telefone}
           />
@@ -64,6 +71,7 @@ const FormContainer = () => {
         <label className="title">
           Empresa
           <input
+          className="box"
             type="text"
             onChange={(e) => setData({ ...data, empresa: e.target.value })}
             value={data.empresa}
