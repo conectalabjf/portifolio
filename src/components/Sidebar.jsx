@@ -12,7 +12,7 @@ const Sidebar = () => {
       <p className="title"></p>
       <SocialNetworkContainer />
       <InformationContainer />
-      <a href="#" className="btn">
+      <a href="https://wa.me/5532988147673" target='_blank' className="btn">
         Whatsapp
       </a>
     </aside>
