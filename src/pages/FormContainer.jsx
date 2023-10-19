@@ -14,7 +14,7 @@ const FormContainer = () => {
   });
   async function handleSubmit(e) {
     e.preventDefault();
-    setErrorMessage("");
+    // setErrorMessage("");
     //setLoading(true);
     const response = await fetch(
       `https://backend-conecta-lab-jezy.vercel.app/contacts`,
@@ -27,9 +27,9 @@ const FormContainer = () => {
       }
     );
     if (response.ok) {
-      setError("Error");
-      alert(error);
-      navigate("/home");
+      // setError("Error");
+      // alert(error);
+      navigate("/portifolio/home");
     } else {
       console.log("erro");
     }
