@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 
 const FormContainer = () => {
   const navigate = useNavigate();
+  const [error, setError] = useState("");
 
   const [data, setData] = useState({
     name: "",
@@ -13,7 +14,7 @@ const FormContainer = () => {
   });
   async function handleSubmit(e) {
     e.preventDefault();
-    //setErrorMessage("");
+    setErrorMessage("");
     //setLoading(true);
     const response = await fetch(
       `https://backend-conecta-lab-jezy.vercel.app/contacts`,
@@ -26,6 +27,8 @@ const FormContainer = () => {
       }
     );
     if (response.ok) {
+      setError("Error");
+      alert(error);
       navigate("/");
     } else {
       console.log("erro");
