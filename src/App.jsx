@@ -1,16 +1,26 @@
-import MainContent from "./components/MainContent";
-import Sidebar from "./components/Sidebar";
-
-import "./styles/components/app.sass";
+import { useState } from 'react'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Home from './components/homeContainer'
+import FormContainer from './components/formContainer'
 
 function App() {
+  const [count, setCount] = useState(0)
+
   return (
-    <div id="portfolio">
-      <h1>ConectaLab</h1>
-      <Sidebar />
-      <MainContent />
-    </div>
-  );
+    <>
+      <BrowserRouter basename='/portifolio'>
+      <Routes>
+      <Route path='/home' element={<Home/>}/>
+      <Route path='/form' element={<FormContainer/>}/>
+        {/* <Route path='/form' element={<Form/>}/>
+        <Route path='/home' element={<Home/>}/>
+        <Route path='/about' element={<AboutPage/>}/>
+        <Route path='/projects' element={<Projects/>}/> */}
+
+      </Routes>
+      </BrowserRouter>
+    </>
+  )
 }
 
-export default App;
+export default App

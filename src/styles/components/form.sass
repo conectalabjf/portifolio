@@ -1,27 +1,37 @@
 @use '../variables'
 @use '../mixins' 
-    
-#information
+
+#form
     @include mixins.center
+    display: flex
     flex-direction: column
     background-color: variables.$bg-color-secondary
     padding: 1rem
-    margin-top: 2rem
+    margin-left: 10%
+    margin-top: 20%
     margin-bottom: 2rem
     text-align: left
     width: 80%
     border-radius: variables.$card-border-radius
 
-    
+    .btn
+        @include mixins.btn
 
     .info-card
         @include mixins.center
-        justify-content: start
+        flex-direction: column
+        
+        justify-content: center
         gap: 1rem
         padding-bottom: .8rem
         margin-bottom: .8rem
         border-bottom: 1px solid #444
         width: 100%
+
+        label 
+            display: flex
+            flex-direction: column
+            width: 40%
 
         h3
             color: variables.$text-color-secondary
@@ -47,4 +57,4 @@
 
         #email-icon
             color: #c17ceb
-
+        
