@@ -3,10 +3,13 @@ const ProjectsContainer = () => {
     <section className="projects-container">
       <h2>Projetos</h2>
       <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore at
-        rem fugit provident dolorum exercitationem, ducimus quisquam ratione
-        cumque reiciendis accusamus totam, veniam iusto numquam distinctio.
-        Dignissimos labore aspernatur pariatur?
+      Dentro do laboratório, existe um setor específico voltado 
+      para a criação de tecnologias direcionadas à área da saúde, 
+      incluindo os jogos sérios para a gameterapia e apoio ao 
+      bem-estar.
+      </p>
+      <p>
+        Veja os projetos desenvolvidos
       </p>
       <a href="#" className="btn">
         Ver Projetos
