@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
 import "../styles/components/form.sass";
+import { useNavigate } from 'react-router-dom';
 
 const formContainer = () => {
+  const navigate = useNavigate();
 
   const[data, setData] = useState({
     name:"",
@@ -21,7 +23,7 @@ const formContainer = () => {
       body: JSON.stringify(data),
     })
     if(response.ok){
-      console.log("enviado")
+      navigate(`/home`);
     }else{
       console.log("erro")
     }
@@ -30,31 +32,31 @@ const formContainer = () => {
     <div id='form'>
 
       <form onSubmit={handleSubmit} className="info-card">
-        <label htmlFor="">Nome
+        <label className='title'>Nome
           <input type="text" 
           onChange={(e)=> setData({...data, name: e.target.value})}
           value={data.name}
           />
         </label>
-        <label htmlFor="">Email
+        <label className='title'>Email
           <input type="text"  
           onChange={(e)=> setData({...data, email: e.target.value})} 
           value={data.email}
           />
         </label>
-        <label htmlFor="">Whatsapp
+        <label className='title'>Whatsapp
           <input type="text" 
           onChange={(e)=> setData({...data, telefone: e.target.value})}
           value={data.telefone}
           />
         </label>
-        <label htmlFor="">Empresa
+        <label className='title'>Empresa
           <input type="text" 
           onChange={(e)=> setData({...data, empresa: e.target.value})}
           value={data.empresa}
           />
         </label>
-        <input type="submit" className='btn'/>
+        <input type="submit" id='bnt' className="social-btn"/>
       </form>
     </div>
   )
